@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <title id="pageTitleTag">Editare layout cu div-uri mutabile și redimensionabile</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="points-bg" class="points-bg"></div>
+  <div class="main-content">
+    <div class="page-title-edit" id="pageTitleEditContainer">
+      <h2 id="pageTitle" tabindex="0">Editare layout<br>Div-uri mutabile și redimensionabile</h2>
+      <button class="title-edit-btn" id="editTitleBtn" title="Editează titlul" aria-label="Editează titlul">&#9998;</button>
+    </div>
+    <div>
+      <button id="add-div-btn" class="gray-btn">Adaugă div nou</button>
+    </div>
+    <div class="editable-area-container">
+      <div class="editable-area" id="editableArea">
+        <div class="resize-bar" id="resizeBar">
+          <div class="resize-bar-indicator"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button id="export-html-btn" title="Salvează varianta statică">Salvează ca HTML simplu</button>
+  <footer id="footerBar">
+    <span id="copyright-text">Copyright © 2025 - Somsht</span>
+    <button class="footer-edit-btn" id="footerEditBtn" title="Editează copyright" aria-label="Editează copyright">&#9998;</button>
+  </footer>
+  <script src="javascript.js"></script>
+</body>
+</html>
